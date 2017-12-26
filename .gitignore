@@ -7,4 +7,4 @@ node_modules
 
 .elm-static-html
 
-public
+public/index.html

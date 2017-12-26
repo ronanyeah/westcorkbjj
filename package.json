@@ -4,8 +4,9 @@
   "description": "https://westcorkbjj.com/",
   "main": "./src/Main.elm",
   "scripts": {
-    "build": "mkdir -p public && elm-static-html -f ./src/Main.elm -o ./public/index.html && sed -i '1s/^/<!DOCTYPE html>\\n/' ./public/index.html",
-    "watch": "mkdir -p public && nodemon -e elm -x 'npm run build'"
+    "build":
+      "elm-static-html -f ./src/Main.elm -o ./public/index.html && sed -i '1s/^/<!DOCTYPE html>\\n/' ./public/index.html",
+    "watch": "nodemon -e elm -x 'npm run build'"
   },
   "repository": {
     "type": "git",
