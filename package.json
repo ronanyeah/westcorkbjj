@@ -1,0 +1,30 @@
+{
+  "name": "westcorkbjj",
+  "version": "1.0.0",
+  "description": "https://westcorkbjj.com/",
+  "main": "./src/Main.elm",
+  "scripts": {
+    "build":
+      "mkdir -p public && elm-static-html -f ./src/Main.elm -o ./public/index.html && sed -i '1s/^/<!DOCTYPE html>\\n/' ./public/index.html",
+    "watch": "mkdir -p public && nodemon -e elm -x 'npm run build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronanyeah/westcorkbjj.git"
+  },
+  "author": "ronanyeah",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ronanyeah/westcorkbjj/issues"
+  },
+  "homepage": "https://westcorkbjj.com/",
+  "dependencies": {
+    "elm-static-html": "^1.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  },
+  "engines": {
+    "node": "9.3.0"
+  }
+}
