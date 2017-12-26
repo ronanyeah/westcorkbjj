@@ -1,13 +1,10 @@
-module Main exposing (..)
+module Main exposing (view)
 
-import Color
-import Element exposing (Element, column, el, empty, image, link, row, screen, text, viewport)
-import Element.Attributes exposing (alignBottom, alignLeft, attribute, center, class, padding, px, spacing, verticalCenter, width)
+import Element exposing (el, image, viewport)
+import Element.Attributes exposing (center, verticalCenter)
 import Html
 import Html.Attributes
 import Style exposing (StyleSheet, style, styleSheet)
-import Style.Color
-import Style.Font as Font
 
 
 type Styles
